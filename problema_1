@@ -1,0 +1,5 @@
+val_max = 1000
+multipli_3 = range(0,val_max,3)
+multipli_5 = range(0,val_max,5)
+totale = sum(multipli_5+multipli_3)
+print(totale)
