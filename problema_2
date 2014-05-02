@@ -1,0 +1,28 @@
+sequenza = [1,2]
+ultimo = sequenza[len(sequenza)-1]
+penultimo = sequenza[len(sequenza)-2]
+valore_max = 4000000
+
+while True:
+	nuovo_valore = ultimo+penultimo
+	
+	if nuovo_valore>valore_max:
+		break
+		
+	sequenza.append(nuovo_valore)
+	ultimo = sequenza[len(sequenza)-1]
+	penultimo = sequenza[len(sequenza)-2]
+
+	print(sequenza)
+
+sequenza_pari = []
+
+for vez in sequenza:
+	if vez%2 == 0:
+		sequenza_pari.append(vez)
+		print(sequenza_pari)
+
+print(sum(sequenza_pari))
+
+
+
